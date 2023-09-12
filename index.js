@@ -6,3 +6,8 @@ const mondayWork = function(work = "go to the office") {
     return `This Monday, I will ${work}.`;
 };
 
+function wrapAdjective (visualFlair = "*") {
+    return function (adj = "special") {
+        return `You are ${visualFlair}${adj}${visualFlair}!`;
+    }
+};
